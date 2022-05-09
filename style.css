@@ -1,0 +1,120 @@
+*{padding:0;margin:0;border:0;}
+*,*:before,*:after{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;}
+:focus,:active{outline:none;}
+a:focus,a:active{outline:none;}
+nav,footer,header,aside{display:block;}
+html,body{height:100%;width:100%;font-size:100%;line-height:1;font-size:14px;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display:none;}
+button{cursor:pointer;}
+button::-moz-focus-inner{padding:0;border:0;}
+a,a:visited{text-decoration:none;}
+a:hover{text-decoration:none;}
+ul li{list-style:none;}
+img{vertical-align:top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit;}
+/* _____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________*/
+
+
+.header__title {
+    margin: 2%;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    color: rgb(94, 82, 94);
+}
+
+.timer {
+    display: flex;
+    flex-direction: column;
+}
+
+.timer__container {
+    display: flex;
+    flex-direction: column;
+    background-color: #d4dde1;
+    padding: 3%;
+    width: 65%;
+    border: 4px solid #6eb5c0;
+    margin: auto;
+}
+
+.timer__buttons {
+    display: flex;
+    justify-content: space-around;
+}
+.timer__button {
+    margin: 2%;
+    padding: 2.5%;
+    font-size: 1.5vw;
+    font-weight: 700;
+    width: 30%;
+    background-color: #fac146;
+    color: #fff;
+}
+
+.timer__button:hover {
+    margin: 2%;
+    padding: 2.5%;
+    font-size: 1.5vw;
+    font-weight: 700;
+    width: 30%;
+    background-color: #f8a232;
+    color: #fff;
+}
+
+.timer__time-enter {
+    border: 2px solid #6eb5c0;
+    padding: 25px;
+    background-color: #eaeef0;
+    font-size: 2.3vw;
+}
+
+.timer__time-running {
+    border: 2px solid #6eb5c0;
+    padding: 25px;
+    font-size: 2.5vw;
+    background-color: #eaeef0;
+    min-height: 90px;
+}
+
+.timer__button-clear {
+    margin-top: 2%;
+    padding: 2%;
+    font-size: 1.5vw;
+    font-weight: 700;
+    width: 30%;
+    background-color: #fa7046;
+    color: #fff;
+    align-self: center;
+}
+
+.timer__button-clear:hover {
+    margin-top: 2%;
+    padding: 2%;
+    font-size: 1.5vw;
+    font-weight: 700;
+    width: 30%;
+    background-color: #fa4c46;
+    color: #fff;
+    align-self: center;
+}
+
+@media (min-width: 480px) and (max-width: 800px) {
+    .timer__button {font-size: 2.5vw; width: 80%; margin: 6%; padding: 5%;}
+    .timer__button:hover {font-size: 2.5vw; width: 80%; margin: 6%; padding: 5%;}
+    .timer__button-clear {font-size: 2.5vw; margin: 4%; padding: 2.5%;}
+    .timer__button-clear:hover {font-size: 2.5vw; margin: 4%; padding: 2.5%;}
+    .timer__time-enter {font-size: 4.3vw;}
+    .timer__time-running {font-size: 4.6vw;}
+}
+
+ @media screen and (min-width: 200px) and (max-width: 480px) {
+    .timer__buttons {display: flex; flex-direction: column; align-items: center;}
+    .timer__button {font-size: 4.5vw; width: 100%; margin: 6%; padding: 6%;}
+    .timer__button:hover {font-size: 4.5vw; width: 100%; margin: 6%; padding: 6%;} 
+    .timer__button-clear {font-size: 4.5vw; width: 60%; margin: 6%; padding: 4%;}
+    .timer__button-clear:hover {font-size: 4.5vw; width: 60%; margin: 6%; padding: 4%;} 
+    .timer__time-enter {font-size: 6.3vw;}
+    .timer__time-running {font-size: 6.6vw;}
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="icon/timer.png">
+    <title>Timer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <hgroup class="header__hgroup">
+            <h1 class="header__title">
+                Timer Online
+            </h1>
+        </hgroup>
+    </header>
+    <section class="timer">
+        <main id="section" class="timer__container">
+            <input type="text" name="time" id="time" placeholder="Enter minutes" value="" class="timer__time-enter">
+            <div class="timer__buttons">
+                <button id="button-start" class="timer__button">Start</button>
+                <button id="button-stop" class="timer__button">Stop</button>
+            </div>
+            <div id="timer" class="timer__time-running"></div>
+        </main>
+        <button id="button-clear" class="timer__button-clear">Clear</button>
+    </section>
+<script src="app.js"></script>
+</body>
+</html>
