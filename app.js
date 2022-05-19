@@ -41,6 +41,7 @@ function timeOut() {
     }, 100);
 };
 
+
 function stop() {
     return pause = true;
 };
